@@ -1,95 +1,17 @@
-:root {
-    line-height: 2rem;
-    --text-primary: #f1f1f1;
-    --base-background: #0f0f0f;
-    --outline: rgba(255,255,255,0.2);
-}
+/* Error: Undefined variable.
+ *    ,
+ * 27 |   border: 1px solid $outline;
+ *    |                     ^^^^^^^^
+ *    '
+ *   scss/main.scss 27:21  root stylesheet */
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: "Roboto", "Arial", sans-serif;
-}
-
-.head {
-    background-color: var(--base-background);
-    color: var(--text-primary);
-    min-height: 100vh;
-    padding: 1px;
-}
-
-.topbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 1rem 2rem;
-}
-
-.body-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.sidebar {
-    width: calc((100vw / 12) * 2);
-    border: 1px solid red;
-
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.4em;
-}
-
-.navitem {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-}
-
-.navitem .img-icon {
-    height: 1.5rem;
-}
-
-.sidebar hr.separator {
-    width: 100%;
-    border: 1px solid var(--outline);
-}
-
-#footer div.separator {
-    margin: 1em 0;
-}
-
-.btn {
-    font-weight: bold;
-    color: var(--text-primary);
-    background-color: transparent;
-    border: 1px solid var(--outline);
-    border-radius: 5em;
-    padding: 0.5em 0.8em;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.btn .img-icon {
-    margin: 0;
-}
-
-.cta-btn {
-    color: #3ea6f4;
-}
-
-.cta-btn:hover {
-    background-color: #3ea6f444;
-    border-color: #3ea6f404;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 27 \2502    border: 1px solid $outline;\a    \2502                      ^^^^^^^^\a    \2575 \a   scss/main.scss 27:21  root stylesheet";
 }

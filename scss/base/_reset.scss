@@ -1,0 +1,15 @@
+:root {
+  line-height: 2rem;
+  --text-primary: #{$text-primary};
+  --base-background: #{$base-background};
+  --outline: #{$outline};
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}

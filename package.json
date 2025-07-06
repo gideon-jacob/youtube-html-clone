@@ -1,0 +1,24 @@
+{
+  "name": "youtube-html-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss:index.css --watch",
+    "sass:build": "sass scss/main.scss:index.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideon-jacob/youtube-html-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gideon-jacob/youtube-html-clone/issues"
+  },
+  "homepage": "https://github.com/gideon-jacob/youtube-html-clone#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
