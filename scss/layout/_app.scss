@@ -1,0 +1,7 @@
+.app-container {
+  background-color: $base-background;
+  color: $text-primary;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

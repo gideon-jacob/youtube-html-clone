@@ -1,0 +1,11 @@
+.navitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  .img-icon {
+    height: 1.5rem;
+  }
+}

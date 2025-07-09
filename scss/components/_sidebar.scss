@@ -9,11 +9,19 @@
   padding: 0 0.4em;
 }
 
+.navitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  .img-icon {
+    height: 1.5rem;
+  }
+}
+
 .sidebar hr.separator {
   width: 100%;
   border: 1px solid $outline;
-}
-
-#footer div.separator {
-  margin: 1em 0;
 }

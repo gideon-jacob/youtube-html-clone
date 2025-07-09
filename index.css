@@ -1,17 +1,98 @@
-/* Error: Undefined variable.
- *    ,
- * 27 |   border: 1px solid $outline;
- *    |                     ^^^^^^^^
- *    '
- *   scss/main.scss 27:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 27 \2502    border: 1px solid $outline;\a    \2502                      ^^^^^^^^\a    \2575 \a   scss/main.scss 27:21  root stylesheet";
+:root {
+  line-height: 2rem;
+  --text-primary: #f1f1f1;
+  --base-background: #0f0f0f;
+  --outline: rgba(255, 255, 255, 0.2);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.app-container {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 16.6666666667vw;
+  border: 1px solid red;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.4em;
+}
+
+.sidebar hr.separator {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#footer div.separator {
+  margin: 1em 0;
+}
+
+.btn {
+  font-weight: bold;
+  color: #f1f1f1;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5em;
+  padding: 0.5em 0.8em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.btn .img-icon {
+  margin: 0;
+}
+
+.cta-btn {
+  color: #3ea6f4;
+}
+.cta-btn:hover {
+  background-color: rgba(62, 166, 244, 0.2666666667);
+  border-color: rgba(62, 166, 244, 0.0156862745);
+}
+
+.navitem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.navitem .img-icon {
+  height: 1.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
